@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-final</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="icon" href="./imagenes/logo.svg">
+</head>
+<body>
+    <nav>
+        <a href="./Index.html">
+            <svg width="200" height="80">
+                <rect id="monitor1" x="45" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
+                <rect id="monitor2" x="50" y="10" width="50" height="25" rx="5" fill="#B1D5E4"></rect>
+                <polygon id="teclado1" points="55 45, 95 45, 115 62, 30 62" fill="#3F6797"></polygon>
+                <polygon id="teclado2" points="57 48, 92 48, 104 58, 43 58" fill="#B1D5E4"></polygon>
+            </svg>
+        </a>
+
+        <ul class="menu">
+            <li>
+                <a class="menu-item" href="./historia.html">HISTORIA</a>
+            </li>
+            <li>
+                <a class="menu-item" href="./ponerAprueba.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>JUGUEMOS UN POCO</h1>
+    </header>
+
+
+    <main>
+        <div>
+            <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        </div>
+        <div id="rompeDrop">
+            <div id="dropZona1">
+                <p>Arrastre y suelte la imagen aqui</p>
+            </div>
+            <div id="dropZona2">
+                <p>Arrastre y suelte la imagen aqui</p>
+            </div>
+            <div id="dropZona3">
+                <p>Arrastre y suelte la imagen aqui</p>
+            </div>
+        </div>
+        <div id="cajaimagenes">
+            <img id="img2" src="./imagenes/rompe2.png" alt="Imagenes del rompecabezas">
+            <img id="img1" src="./imagenes/Rompe1.png" alt="Imagenes del rompecabezas">
+            <img id="img3" src="./imagenes/Rompe3.png" alt="Imagenes del rompecabezas">
+        </div>
+        <button class="botonesVideo reinicio" onclick="reinicio()">
+            Reiniciar
+        </button>
+    </main>
+    <script src="./Script/scriptjuego.js"></script>
+</body>
+</html>
