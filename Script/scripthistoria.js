@@ -18,3 +18,9 @@ function tiempos() {
     duracionTotal.innerHTML = `${Math.floor(video.duration / 60)}:${Math.floor(video.duration % 60)}`;
     duracion.innerHTML = `${Math.floor(video.currentTime / 60)}:${Math.floor(video.currentTime % 60)}`;
     };
+
+/*------MENU------*/
+function toggleDarkLight() {
+    let body = document.querySelector("body"); 
+    body.classList.toggle("body-night");
+};
